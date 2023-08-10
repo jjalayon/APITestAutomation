@@ -20,15 +20,11 @@ public class BaseStepDefinition {
     public ResponseContainer responseContainer;
     public Promotions Promotions;
     Gson gson = new Gson();
-    Map<String, String> keyVal;
-    List<List<String>> listOfDt;
-
 
 
     public void assertExpectedAndActualResponse(String expectedResponse, String actualResponse){
         Assert.assertEquals(expectedResponse,actualResponse);
     }
-
 
     public List<String> getListOfString(String text){
         List<String> newListOfString = new ArrayList<>();
