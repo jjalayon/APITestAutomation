@@ -11,4 +11,8 @@ public class Promotions {
     private String name;
     @SerializedName("Description")
     private String description;
+    @SerializedName("Price")
+    private int price;
+    @SerializedName("MinimumPhotoCount")
+    private int minphotocount;
 }
